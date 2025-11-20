@@ -1,0 +1,20 @@
+[
+    {
+        "name": "สมชาย",
+        "surname": "ใจดี",
+        "class": "ม.1",
+        "certificate_url": "https://via.placeholder.com/600x400?text=Certificate+Somchai"
+    },
+    {
+        "name": "สมหญิง",
+        "surname": "รักเรียน",
+        "class": "ม.2",
+        "certificate_url": "https://via.placeholder.com/600x400?text=Certificate+Somying"
+    },
+    {
+        "name": "เด็กชาย",
+        "surname": "มานะ",
+        "class": "ม.1",
+        "certificate_url": "https://via.placeholder.com/600x400?text=Certificate+Mana"
+    }
+]
