@@ -56,24 +56,22 @@ searchForm.addEventListener('submit', (e) => {
 
   const firstName = document.getElementById('firstName').value.trim();
   const lastName = document.getElementById('lastName').value.trim();
-  const studentClass = document.getElementById('studentClass').value.trim();
 
-  if (!firstName || !lastName || !studentClass) {
+  if (!firstName || !lastName) {
     alert('กรุณากรอกข้อมูลให้ครบถ้วน');
     return;
   }
 
-  const results = filterCertificates(firstName, lastName, studentClass);
+  const results = filterCertificates(firstName, lastName);
   renderResults(results);
 });
 
 // Filter Logic
-function filterCertificates(firstName, lastName, studentClass) {
+function filterCertificates(firstName, lastName) {
   return certificates.filter(cert => {
     return (
       cert.name.includes(firstName) &&
-      cert.surname.includes(lastName) &&
-      cert.class.includes(studentClass)
+      cert.surname.includes(lastName)
     );
   });
 }
